@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pizza Clicker</h1>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <div id="game-container">
+    <img id="pizza" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza">
+    <div id="slice-count">0 slices</div>
+    <div id="upgrades">
+      <button class="upgrade" id="buy-chef" disabled>Hire Chef (Cost: 10 slices)</button>
+      <span id="chef-count">Chefs: 0</span>
+      <br>
+      <button class="upgrade" id="buy-oven" disabled>Buy Oven (Cost: 50 slices)</button>
+      <span id="oven-count">Ovens: 0</span>
+    </div>
+    <div id="leaderboard">
+      <h2>Leaderboard</h2>
+      <ol id="scores">
+        <!-- Sample scores -->
+        <li>Player1 - 200 slices</li>
+        <li>Player2 - 150 slices</li>
+      </ol>
+    </div>
+  </div>
+  <audio id="click-sound" src="https://freesound.org/data/previews/103/103269_7037-lq.mp3"></audio>
+  <audio id="ding-sound" src="https://freesound.org/data/previews/256/256113_4486188-lq.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

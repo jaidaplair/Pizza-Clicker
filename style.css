@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.publicdomainpictures.net/pictures/320000/velka/pizza-pattern-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  /* Game Container */
+  #game-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    display: inline-block;
+  }
+  
+  /* Pizza Image */
+  #pizza {
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  #pizza:active {
+    transform: scale(0.95);
+  }
+  
+  /* Slice Counter */
+  #slice-count {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px #000;
+    color: #ffd700;
+  }
+  
+  /* Upgrades Section */
+  #upgrades {
+    margin-top: 20px;
+  }
+  
+  .upgrade {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #000;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .upgrade:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .upgrade:hover:not(:disabled) {
+    transform: scale(1.1);
+    background-color: #ff6347;
+  }
+  
+  /* Upgrade Counters */
+  #upgrades span {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffd700;
+  }
+/* Progress Bar */
+#progress-container {
+    width: 80%;
+    height: 20px;
+    background-color: #7f8c8d;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #e74c3c;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Leaderboard */
+  #leaderboard {
+    margin-top: 20px;
+    color: #ffd700;
+  }
+  
+  #leaderboard h2 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  #leaderboard ol {
+    list-style: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
